@@ -1,0 +1,8 @@
+#!/usr/bin/env python
+import hashlib
+
+pw = raw_input("your password:")
+
+md5_pw = hashlib.md5()
+md5_pw.update(pw.encode('utf-8'))
+print('password:',pw,'md5 is',md5_pw.hexdigest())
